@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "whats-the-meaning"
+version = "0.1.0"
+description = ""
+authors = ["ogdhruv <dhruvrohilla.has@gmail.com>"]
+readme = "README.md"
+packages = [{include = "whats_the_meaning"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.8.3"
+rich = "^12.5.1"
+textual = "^0.1.18"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+wtm = 'whats_the_meaning.run:wtm'
