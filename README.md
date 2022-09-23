@@ -64,7 +64,6 @@ See the [open issues](https://github.com/ogdhruv/whats-the-meaning/issues) for a
 - Easy to use
 - Using an open dictionary api
 
-### Built With
 [![python](https://forthebadge.com/images/badges/made-with-python.svg)](https://python.org)
 
 <!-- CONTRIBUTING -->
@@ -88,14 +87,6 @@ Don't forget to give the project a star! Thanks again!
 ## License
 
 Distributed under the MIT License.
-
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Dhruv - [@ogdhruv](https://twitter.com/ogdhruv)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
