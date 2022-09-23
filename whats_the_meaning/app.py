@@ -146,7 +146,7 @@ class App:
                     height=10,
                 )
 
-            #parsing antonyms
+            #parsing synonyms
             if word_obj.synonyms:
                 synonyms_list = []
 
