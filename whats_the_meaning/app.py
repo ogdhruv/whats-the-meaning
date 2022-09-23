@@ -10,9 +10,10 @@ from rich.panel import Panel
 from rich import box
 from rich.columns import Columns
 
-
+# globals to add in column 
 global synonyms_panel
 global antonyms_panel
+
 # Keeping record of word.
 class Word:
     def __init__(self, response: Any):
@@ -71,7 +72,8 @@ class App:
     def __init__(self) -> None:
         self.response = None
         self.console = Console()
-
+    
+    # api fetch for the given word
     async def call(self, word: str) -> Word:
         async with aiohttp.ClientSession() as session:
             async with session.get(
@@ -91,6 +93,7 @@ class App:
             )
             self.console.line()
 
+        # start of the graphical cli operations
         else:
             synonyms_panel = None
             antonyms_panel = None
@@ -125,6 +128,7 @@ class App:
 
                 self.console.print(definitions_panel)
 
+            # parsing antonyms
             if word_obj.antonyms:
                 antonyms_list = []
 
@@ -142,6 +146,7 @@ class App:
                     height=10,
                 )
 
+            #parsing antonyms
             if word_obj.synonyms:
                 synonyms_list = []
 
@@ -165,6 +170,7 @@ class App:
                     )
                 )
 
+            #parsing of phonetics
             if word_obj.phonetics:
                 self.console.line()
                 self.console.rule(
@@ -175,7 +181,7 @@ class App:
                     self.console.print(f"[red]{item}[/]", justify="center")
 
             self.console.line(2)
-
+    # incase of input error
     def err(self, type: ErrorType) -> None:
         if type == ErrorType.NO_ARG:
             self.console.line()
