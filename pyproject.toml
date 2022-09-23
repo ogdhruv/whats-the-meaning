@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "whats-the-meaning"
 version = "0.1.0"
-description = ""
+description = "An awesome graphical cli dictionary !"
 authors = ["ogdhruv <dhruvrohilla.has@gmail.com>"]
 readme = "README.md"
 packages = [{include = "whats_the_meaning"}]
