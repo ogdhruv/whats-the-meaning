@@ -18,7 +18,7 @@
 <!--  -->
 ## DEMO 🎥
 
-> will add soon
+[![asciicast](https://asciinema.org/a/MfRK2UkKOSL1VjhNRwIlNIlzH.svg)](https://asciinema.org/a/MfRK2UkKOSL1VjhNRwIlNIlzH)
 
 ## Prerequisites 💻️
 
