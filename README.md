@@ -84,5 +84,3 @@ Don't forget to give the project a star! Thanks again!
 ## License
 
 Distributed under the MIT License.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
